@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-atlantic-net"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Jamie Starke"]
   spec.email         = ["git@jamiestarke.com"]
   spec.description   = "A Lita handler for interacting with Atlantic.net"
