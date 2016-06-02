@@ -1,0 +1,13 @@
+en:
+  lita:
+    handlers:
+      atlantic_net:
+        instances:
+          list:
+            detail: "ID: %{InstanceId}, Description: %{vm_description}, IP: %{vm_ip_address}, Plan: %{vm_plan_name}, Status: %{vm_status}"
+            none: "No instances on your account."
+        help:
+          list_instances_key: atlantic instances
+          list_instances_value: Displays the list of instances for your Atlantic.net account.
+          reboot_instance_key: atlantic reboot SERVER_ID
+          reboot_instance_value: Reboots a server with the given ID
