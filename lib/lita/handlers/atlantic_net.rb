@@ -21,7 +21,7 @@ module Lita
       def list_instances(response)
         instances = client.list_instances
         if instances and instances.any?
-          messages = instances.map { |instance| t("instances.list.detail", instance.map { |k, v| [k.to_sym, v] }.to_h)}
+          messages = instances.map { |instance| t("instances.list.detail", Hash[instance.map { |k, v| [k.to_sym, v] }])}
           response.reply(*messages)
         else
           response.reply(t("instances.list.none"))
